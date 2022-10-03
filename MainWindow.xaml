@@ -5,14 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Palashicheva_PR4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBlock x:Name="tbr" HorizontalAlignment="Left" Margin="242,76,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBox x:Name="tb" HorizontalAlignment="Left" Height="23" Margin="229,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="tbRAND" HorizontalAlignment="Left" Height="23" Margin="229,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <Label x:Name="lb" Content="Label" HorizontalAlignment="Left" Margin="307,295,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="py" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="397,280,0,0" Click="py_Click"/>
-        <Button x:Name="randok" Content="Подтвердить диапазон рандома" HorizontalAlignment="Left" Margin="190,335,0,0" VerticalAlignment="Top" Width="223" Height="45" Click="randok_Click"/>
+        Title="ИСРПО ПР 4 Палашичева 402" Height="450" Width="800">
+    <Grid Background="#FFA16DEC">
+        <TextBlock x:Name="tbr" HorizontalAlignment="Left" Margin="199,46,0,0" TextWrapping="Wrap" Text="Игра &quot;Угадай число&quot;" VerticalAlignment="Top" Height="34" Width="273" FontWeight="Bold" TextAlignment="Center" FontSize="22">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF50C6E0" Offset="0"/>
+                    <GradientStop Color="#FFEEA1CE" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBox x:Name="tb" HorizontalAlignment="Left" Height="32" Margin="338,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" FontSize="22" />
+        <TextBox x:Name="tbRAND" HorizontalAlignment="Left" Height="33" Margin="338,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" FontSize="22" />
+        <Button x:Name="py" Content="Проверить введенное число" HorizontalAlignment="Left" VerticalAlignment="Top" Width="359" Margin="338,307,0,0" Click="py_Click" Height="49" FontSize="22" Background="#FFCB009D"/>
+        <Button x:Name="randok" Content="Подтвердить диапазон рандома" HorizontalAlignment="Left" Margin="338,182,0,0" VerticalAlignment="Top" Width="359" Height="45" Click="randok_Click" FontSize="22" Background="#FFCB009D"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,128,0,0" TextWrapping="Wrap" Text="Введите конечный диапазон" VerticalAlignment="Top" Height="37" Width="294" FontSize="22" Foreground="#FFF1E700" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="294" FontSize="22" Foreground="#FFF1E700" FontStyle="Italic"><Run Text="Введите "/><Run Text="предполагаемое правильное число"/></TextBlock>
+        <Label x:Name="lb" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="0,366,0,0" VerticalAlignment="Top" Background="#FFAFFF02" Height="43" Width="792" Foreground="#FFFF0080" FontWeight="Bold" FontSize="22"/>
 
     </Grid>
 </Window>
